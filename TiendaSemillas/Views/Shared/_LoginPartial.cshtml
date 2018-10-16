@@ -1,0 +1,27 @@
+@using Microsoft.AspNetCore.Http;
+@if (@Context.Session.GetInt32("logged") == 1)
+{
+    <form asp-controller="account" asp-action="logout" class="navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a title="Manage">Hello @Context.Session.GetString("username")!</a>
+            </li>
+            <li>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
+            </li>
+        </ul>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a asp-controller="Clients" asp-action="Details" asp-route-id="@Context.Session.GetInt32("userID")">Mi Cuenta</a></li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a asp-controller="clients" asp-action="create">Register</a></li>
+        <li><a asp-controller="account" asp-action="create">Login</a></li>
+    </ul>
+}
+<ul class="nav navbar-nav navbar-right">
+    <li><a asp-controller="Cart" asp-action="index">Carrito</a></li>
+</ul>

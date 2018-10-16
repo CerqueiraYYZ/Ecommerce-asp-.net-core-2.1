@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Cambio de contraseña";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Recuperacion</title>
+</head>
+<body>
+
+    <h3>Cambio de contraseña</h3>
+    @ViewBag.error
+    <form method="post" asp-controller="account" asp-action="recuperacionaction">
+        <table border="0" cellpadding="2" cellspacing="2">
+            <tr>
+                <td>Correo</td>
+                <td><input type="text" name="correo"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

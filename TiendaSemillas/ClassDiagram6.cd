@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TiendaSemillas.Models.Client" Collapsed="true">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\ManejoDeUsuarios\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiendaSemillas.Models.Person" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAgAAAEAAAAgAAAAIEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ManejoDeUsuarios\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiendaSemillas.Models.Vendor" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ManejoDeUsuarios\Vendor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiendaSemillas.Models.ErrorViewModel" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiendaSemillas.Models.Factura" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAQAAAEAAAAAAAQAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Factura.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiendaSemillas.Models.Producto" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAgAAQAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

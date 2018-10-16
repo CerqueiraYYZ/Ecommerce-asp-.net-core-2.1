@@ -1,0 +1,76 @@
+﻿@model TiendaSemillas.Areas.Admin.Models.Factura
+
+
+@{
+    ViewData["Title"] = "Gracias";
+}
+
+<h2>Gracias por realizar tu compra!</h2>
+<h2>Detalles de la factura</h2>
+
+<div>
+    <h4>Factura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeCompra)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeCompra)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Cliente</th>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelC => modelC.Client.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelC => modelC.Client.Apellido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelC => modelC.Client.Correo)
+                    </td>
+                </tr>
+            </table>
+            <table class="table">
+                <tr>
+                    <th>Productos</th>
+                </tr>
+                <tr>
+                    @{ foreach (var item in ViewBag.listaProductos)
+                        {
+                                <td>
+                                    @Html.Raw(item.Producto.Nombre)
+                                </td>
+                                <td>
+                                    @Html.Raw(""+item.Producto.Precio)
+                                </td>
+                        }
+                    }
+                </tr>
+            </table>
+        </dd>
+    </dl>
+</div>
+
+
+<div>
+    <a asp-controller="Home" asp-action="Index">Back to shop</a>
+</div>
+

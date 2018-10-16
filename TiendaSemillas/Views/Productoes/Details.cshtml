@@ -1,0 +1,50 @@
+﻿@model TiendaSemillas.Areas.Admin.Models.Producto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalles de producto:</h2>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Inventario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Inventario)
+        </dd>
+        <dd>
+
+            @{
+                if (Model.Imagenes != null)
+                {
+                    foreach (var photo in Model.Imagenes)
+                    {
+                        <img src="~/images/@Model.Nombre/@photo.nombre" width="120" />
+                    }
+                }
+
+            }
+
+        </dd>
+    </dl>
+</div>
+<div>
+    
+    <a asp-action="Index">Back to List</a>
+</div>
